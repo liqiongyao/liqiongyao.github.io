@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -92,11 +92,10 @@
 <ul>
 <li>解析：初始化的全局变量和静态变量存放在data段（全局初始化区），未初始化的全局变量和未初始化的静态变量放在bss段（全局未初始化区），其中BSS段的特点是：在程序执行之前BSS段会自动清0，所以未初始化的全局变量和静态变量在程序执行之前就已经变为0了。</li>
 </ul>
-<blockquote>
 <pre><code>void f(char**p)
 {
     *p +=2;    
-}
+    }
 main()
 {
     char *a[]={&quot;123&quot;,&quot;abc&quot;,&quot;456&quot;},**p;
@@ -104,8 +103,7 @@ main()
     f(p);
     printf(&quot;%s\r\n&quot;,*p);
 }
-</code></pre></blockquote>
-<ul>
+</code></pre><ul>
 <li>程序会打印出来的是 3，其中<em>p+2就相当于</em>p=<em>p+2；其中</em>p指向字符串“123”的第一个元素，即‘1’，指针p向后移两个元素的地址，即指向‘3’，而<em>（p+2）才是基于p每次向后移一个字符串的长度，即</em>（p+2）指向“456”.</li>
 </ul>
 <p>在64位系统中，有如下类：</p>
@@ -164,7 +162,7 @@ return (0);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/24/笔试题知识点总结/" data-id="cj0nsf9aw0000q4w3b72rhkan" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/03/24/笔试题知识点总结/" data-id="cj0nskfe2000090w3kh5n5a8s" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -205,7 +203,7 @@ return (0);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/23/软件工程/" data-id="cj0nsf9bc0001q4w3ayygq9x8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/03/23/软件工程/" data-id="cj0nskfeh000190w3v7696nt1" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -240,7 +238,7 @@ return (0);
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -265,7 +263,7 @@ return (0);
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
