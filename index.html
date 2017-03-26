@@ -326,84 +326,19 @@
 
       
         
-          
-            <pre><code>void func()
+          <pre><code>void func()
 {
    static int val;
    …
 }
-</code></pre><p>中，变量val的内存地址位于：未初始化数据段</p>
-<ul>
-<li>解析：初始化的全局变量和静态变量存放在data段（全局初始化区），未初始化的全局变量和未初始化的静态变量放在bss段（全局未初始化区），其中BSS段的特点是：在程序执行之前BSS段会自动清0，所以未初始化的全局变量和静态变量在程序执行之前就已经变为0了。</li>
-</ul>
-<pre><code>void f(char**p)
-{
-    *p +=2;    
-    }
-main()
-{
-    char *a[]={&quot;123&quot;,&quot;abc&quot;,&quot;456&quot;},**p;
-    p=a;
-    f(p);
-    printf(&quot;%s\r\n&quot;,*p);
-}
-</code></pre><ul>
-<li>程序会打印出来的是 3，其中<em>p+2就相当于</em>p=<em>p+2；其中</em>p指向字符串“123”的第一个元素，即‘1’，指针p向后移两个元素的地址，即指向‘3’，而<em>（p+2）才是基于p每次向后移一个字符串的长度，即</em>（p+2）指向“456”.</li>
-</ul>
-<p>在64位系统中，有如下类：</p>
-<pre><code>class A
-{
-public:
-    void *p1;
-private:
-    viod *p2;
-protected:
-    viod *p3;
-};
-class B: public A{};
-</code></pre><p>那么sizeof（B）的数值是：24</p>
-<ul>
-<li>B继承了A的全部变量，不过不是都能访问而已</li>
-<li>64位系统中，指针和类型为long的所占的字节大小为8</li>
-</ul>
-<p>运行下面这段C语言程序之后，输出在屏幕上的结果是：</p>
-<pre><code>void foobar(int a, int *b, int **c)
-{
-int *p = &amp;a;
-    *p = 101;
-    *c = b;
-    b = p;
-}
-
-int main()
-{
-int a = 1;
-int b = 2;
-int c = 3;
-int *p = &amp;c;
-foobar(a, &amp;b, &amp;p);
-printf(&quot;a=%d, b=%d, c=%d, *p=%d\n&quot;, a, b, c, *p);
-return (0);
-}
-</code></pre><p>最后的答案为：a=1,b=2,c=3,*p=2</p>
-<ul>
-<li>函数foobar中的a是按值传递，因此在函数中的修改不会引起主函数中的变化。</li>
-<li>函数中b传递的是主函数中b的指针，语句b = p ，其中p指向的是函数foobar内局部变量a的地址，让传递过去的指针换了指向的数据，原来指向的数据（主函数中的b）不会有影响。如果这里是<em>b = </em>p那么主函数中的b也要相应变化。</li>
-<li>函数中的c传递的是双重指针，*c = b，也就是让主函数中的p指针指向了主函数中的b的地址</li>
-<li><p>在函数foobar中对指针的变化没有影响到主函数，只是让双重指针更换了指向而已</p>
-<pre><code>main()
-{
-    int a[5]={1,2,3,4,5};
-    int *p=(int *)(&amp;a+1);
-    printf(&quot;%d&quot;,*(p-1));
-}
-</code></pre><p>以下代码输出的结果是：3</p>
-</li>
-<li><p>&amp;a表示一个指向大小为5数组的指针，那么&amp;a+1就是表示一个指向大小为5的下一个数组的指针，也就是数组a最后一个元素的下一个位置，那么int<em>p=(int</em>)(&amp;a+1)进行强制类型转换，将指向数组的指针转换为指向第二个数组中首元素的指针，所以p-1则是指向第一个数组中最后一个元素的指针，所以输出是5</p>
-</li>
-</ul>
-
-          
+</code></pre><p>中，变量val的内存地址位于：未初始化数据段
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/24/笔试题知识点总结/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -521,14 +456,17 @@ return (0);
 
       
         
-          
-            <h2 id="第一章-软件和软件工程"><a href="#第一章-软件和软件工程" class="headerlink" title="第一章  软件和软件工程"></a>第一章  软件和软件工程</h2><h3 id="要点浏览"><a href="#要点浏览" class="headerlink" title="要点浏览"></a>要点浏览</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><ul>
+          <h2 id="第一章-软件和软件工程"><a href="#第一章-软件和软件工程" class="headerlink" title="第一章  软件和软件工程"></a>第一章  软件和软件工程</h2><h3 id="要点浏览"><a href="#要点浏览" class="headerlink" title="要点浏览"></a>要点浏览</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><ul>
 <li>计算机软件是由专业人员开发并长期维护的软件产品 。</li>
 <li>完整的软件产品包括：可以在各种不同的规模及体系结构的计算机上运行的程序，程序运行的过程中产生的各种结果，以及各种描述信息，这些信息可以以拷贝或者是各种电子媒介形式存在。</li>
-<li>软件工程包括过程，各种方法以及各类工具，以协助专业人员构建高质量的计算机软件</li>
-</ul>
-
-          
+<li>软件工程包括过程，各种方法以及各类工具，以协助专业人员构建高质量的计算机软件
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/23/软件工程/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
