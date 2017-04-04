@@ -87,16 +87,16 @@
 
 
 
-<meta name="description" content="做心怀善意的人，结踏实温暖的朋友。">
+<meta name="description" content="结构测试技术通过对函数控制流程的详细分析帮助我们降低风险。在某些情况下，结构测试对于研究分析程序的某部分代码非常有效，这些代码先前并没有经过大规模的行为测试，也没有被基于黑盒理论而设计的方法性的功能测试验证通过。结构测试技术是一种白盒测试设计方法。设计测试是基于程序的内部结构和具体实现。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="结构测试技术">
 <meta property="og:url" content="http://yoursite.com/2017/04/04/结构测试技术/index.html">
 <meta property="og:site_name" content="liqiongyao">
-<meta property="og:description" content="做心怀善意的人，结踏实温暖的朋友。">
-<meta property="og:updated_time" content="2017-04-04T04:34:26.113Z">
+<meta property="og:description" content="结构测试技术通过对函数控制流程的详细分析帮助我们降低风险。在某些情况下，结构测试对于研究分析程序的某部分代码非常有效，这些代码先前并没有经过大规模的行为测试，也没有被基于黑盒理论而设计的方法性的功能测试验证通过。结构测试技术是一种白盒测试设计方法。设计测试是基于程序的内部结构和具体实现。">
+<meta property="og:updated_time" content="2017-04-04T06:24:12.191Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="结构测试技术">
-<meta name="twitter:description" content="做心怀善意的人，结踏实温暖的朋友。">
+<meta name="twitter:description" content="结构测试技术通过对函数控制流程的详细分析帮助我们降低风险。在某些情况下，结构测试对于研究分析程序的某部分代码非常有效，这些代码先前并没有经过大规模的行为测试，也没有被基于黑盒理论而设计的方法性的功能测试验证通过。结构测试技术是一种白盒测试设计方法。设计测试是基于程序的内部结构和具体实现。">
 
 
 
@@ -316,6 +316,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/软件测试/" itemprop="url" rel="index">
+                    <span itemprop="name">软件测试</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -341,7 +363,36 @@
       
 
       
-        
+        <p>结构测试技术通过对函数控制流程的详细分析帮助我们降低风险。在某些情况下，结构测试对于研究分析程序的某部分代码非常有效，这些代码先前并没有经过大规模的行为测试，也没有被基于黑盒理论而设计的方法性的功能测试验证通过。结构测试技术是一种白盒测试设计方法。设计测试是基于程序的内部结构和具体实现。<a id="more"></a></p>
+<h3 id="块测试"><a href="#块测试" class="headerlink" title="块测试"></a>块测试</h3><p>函数的基本结构测试方法使用了一些简单技术，包括语句测试和块测试。语句测试的目的是执行一个函数中的所有语句，块测试则执行成组的连续语句或不包含分支或函数调用的语句块。适合于块测试的一种结构类型是case/switch语句。switch语句处理对于一个参数的多重选择，是处理函数内部控制流程的一个有效方法。块测试体现其重要性的另一个地方是异常处理，行为测试通常不执行程序中的许多异常处理，因此，设计结构测试以减少风险和保证异常的正确处理是很重要的，如果应用程序本身能处理异常，并且异常发生在应用程序代码执行的过程中，那么系统将搜寻适当的异常处理程序，并且控制流程也会转移到相应位置。</p>
+<p>块测试是用于单元测试的一种普遍方法，它非常适合于迅速的评估某函数的基本功能，对于设计用于执行switch/case语句和异常处理程序控制流程的测试来说，它也是一个很有价值的技术。</p>
+<h3 id="判定测试"><a href="#判定测试" class="headerlink" title="判定测试"></a>判定测试</h3><p>判定测试对于条件子句求职，根据条件为真或者为假，简单的布尔表达式就可以确定控制流程的分支。判定测试的主要目标是设计既能够验证布尔表达式中为真也能验证假结果的测试。与块测试相比，判定测试的优点在于它对控制流程提供更好的敏感度。</p>
+<p>判定测试不能有效的评估复合条件判断的结果为真和假的情况。</p>
+<h3 id="条件测试"><a href="#条件测试" class="headerlink" title="条件测试"></a>条件测试</h3><p>有时一个函数中的控制流程取决于多个条件语句的结果。当一个条件语句包含两个或者两个以上的布尔表达式，我们可以使用条件测试这种结构测试技术，条件测试类似于判定测试，但是条件测试是用于评估复合条件语句中每个子表达式估值为“真”和“假”的结果。在测试复合条件语句时，条件测试比判定测试对控制流程提供了更好的敏感度。</p>
+<p>条件测试在应对含有复合条件语句的函数时包含并超越了块测试和判定测试。</p>
+<h3 id="基础路径测试"><a href="#基础路径测试" class="headerlink" title="基础路径测试"></a>基础路径测试</h3><p>路经测试试图遍历程序中所有可能的途径。一条基础路径的定义为通过一个函数的一条线性独立的路径。线性独立的基础路径集合的线性组合代表了所有可能的通过某一函数的路径。</p>
+<p>简化基础路径技术：</p>
+<ul>
+<li>确认从被测函数入口到出口的最短基准路线（经过最少条件语句的路径）</li>
+<li>回到函数入口</li>
+<li>跟踪控制流程，从入口点到第一个未被先后评估为真和假两种结果的条件语句</li>
+<li>改变改条件语句的结果</li>
+<li>按最短路径从这个条件语句到函数出口</li>
+<li>重复步骤，直到所有的基础路径都被定义</li>
+</ul>
+<p>虽然简化基准路径技术能够有效快速的查明一个基础路径集合，但它会导致限制过于严格的基础路径集合，或者该集合可能包括不可能的通过路径。</p>
+<p>实用基准路经技术：</p>
+<ul>
+<li>确定有可能的功能性的通过函数的基准路径，它代表一个非常可能的通过函数的控制流程。</li>
+<li>回到函数入口点</li>
+<li>跟踪控制流程，从函数入口点到第一个未被先后评估为真和假两种结果的条件语句</li>
+<li>改变改条件语句的结果</li>
+<li>沿一条包括最大数量的被基准路径所遍历的条件语句到函数出口点的路径</li>
+<li>重复步骤，直到每一个条件语句都被先后评估为真和假两种结果，而且所有的基础路径都被定义</li>
+</ul>
+<p>基础路径测试与块测试和判定测试的不同之处在于：每一个条件语句的每个结果必须被独立地测试，基础路经测试包含了块和判定测试。</p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>结构测试技术是一套系统过程，它能帮助测试人员在分析程序代码，提高代码覆盖率时更有效的设计测试。结构测试的目的是支持和加强其他测试的方式和方法。通过设计和运行能遍历其他测试方法所不能遍历的代码路径的测试，结构测试还能够提供更深入的信息和降低风险。</p>
+
       
     </div>
 
@@ -444,8 +495,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpg"
@@ -507,6 +567,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#块测试"><span class="nav-number">1.</span> <span class="nav-text">块测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#判定测试"><span class="nav-number">2.</span> <span class="nav-text">判定测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#条件测试"><span class="nav-number">3.</span> <span class="nav-text">条件测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基础路径测试"><span class="nav-number">4.</span> <span class="nav-text">基础路径测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小结"><span class="nav-number">5.</span> <span class="nav-text">小结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
