@@ -270,6 +270,304 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/04/结构测试技术/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="liqiongyao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="liqiongyao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/04/04/结构测试技术/" itemprop="url">
+                  结构测试技术
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-04T12:14:27+08:00">
+                2017-04-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/28/功能测试技术/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="liqiongyao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="liqiongyao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/28/功能测试技术/" itemprop="url">
+                  功能测试技术
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-28T19:45:55+08:00">
+                2017-03-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/软件测试/" itemprop="url" rel="index">
+                    <span itemprop="name">软件测试</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>功能测试技术举报这样的潜能：它能够把针对产品特定功能范围内的测试覆盖率逐渐提升到一个很高的置信度，同时降低测试用例的冗余数量。</p>
+<h3 id="等价类划分-ECP"><a href="#等价类划分-ECP" class="headerlink" title="等价类划分 ECP"></a>等价类划分 ECP</h3><p>在设计ECP测试之前，我们有必要仔细为某个输入和输出参数涉及的变量数据实施解耦和建模，以将其模塑成分离的合法及非法分类子集。然后，ECP测试就可以经由这样的手段导出：创建每个合法分类子集的合集，直到测试取遍合法分类的所有子集为止。然后再对非法数据子集依次评估。</p>
+<h4 id="变量分解"><a href="#变量分解" class="headerlink" title="变量分解"></a>变量分解</h4><p>为了帮助我们把数据分解在每一个类中的离散子集，《软件测试艺术》中提出了四个启发式方法，包括值的范围、变量相似组、唯一值和特殊值。</p>
+<ul>
+<li>范围：在数据的临近集合中最小值和最大值间的任何数据点应产生相同的结果。</li>
+<li>组：只要元素被等价的处理，那么元素组是允许的。</li>
+<li>唯一值：在类或者子集中的数据可能以不同于同一类或子集中的其他数据的方式被处理。</li>
+<li>特殊值：条件必须提供或者必须不被提供。</li>
+</ul>
+<h4 id="参数子集分析"><a href="#参数子集分析" class="headerlink" title="参数子集分析"></a>参数子集分析</h4><p>对子集的参数进行分析，得到范围更小的子集</p>
+<h4 id="等价类划分测试"><a href="#等价类划分测试" class="headerlink" title="等价类划分测试"></a>等价类划分测试</h4><p>对所有参数创建合法类子集的组合，直至在验证测试中至少包含一次所有的合法类子集，接着，对于每一个参数单独测试的每一个非法类子集，把其他参数设置成一些合法值。等价类划分的所有测试都不专门针对边界条件，这是因为ECP是用于识别特定类型的错误，而边界值测试是用于识别不同类型的错误。</p>
+<h3 id="边界值分析-BVA"><a href="#边界值分析-BVA" class="headerlink" title="边界值分析 BVA"></a>边界值分析 BVA</h3><p>历史经验表明，相当多的问题出现在线性变量的边界值上，所以为了防止忽略边界类的缺陷，我们必须仔细分析线性变量的边界条件。当BVA与ECP结合使用，BVA这个功能技术可以有效地分析独立输入和输出参数等线性参数的边界值。BVA或边界测试检测以下类型的错误特别有用：</p>
+<ul>
+<li>错误的数据类型的人工约束</li>
+<li>错误地分配关系运算符</li>
+<li>数据类型的封装</li>
+<li>循环结构问题</li>
+<li>差一错误</li>
+</ul>
+<h4 id="定义边界测试"><a href="#定义边界测试" class="headerlink" title="定义边界测试"></a>定义边界测试</h4><p>Paul Jorgensen建议用于基本边界值分析的测试数量可以用4n+1来计算（或者6n+1包括健壮性边界值测试的最小值-1和最大值+1数值），这里的n等于独立参数的个数。</p>
+<h4 id="边界值分析：一个全新的公式"><a href="#边界值分析：一个全新的公式" class="headerlink" title="边界值分析：一个全新的公式"></a>边界值分析：一个全新的公式</h4><p>3（BC）公式来计算最小的测试数据子集，这里的BC等于特定边界条件的数量。</p>
+<h4 id="隐性边界"><a href="#隐性边界" class="headerlink" title="隐性边界"></a>隐性边界</h4><p>不是所有的边界都能通过数字型输入或输出来确定</p>
+<h4 id="边界值分析小结"><a href="#边界值分析小结" class="headerlink" title="边界值分析小结"></a>边界值分析小结</h4><p>边界值分析是一个以介于特定边界值上下的数据作为研究目标的功能性技术，对处在边界条件的变量进行系统分析增加测试的有效性，提供更优良的信息，增加检测特定类缺陷的可能，结合3（BC）公式，可以更好的估计所需边界测试的数量，并相比于其他公式，可以提供更广泛的测试集合。因为测试都是基于确定的边界数值，而不是基于参数的数量。边界值分析的有效性取决于我们是否有能力将离散变量分解为等价类，并确定重要的边界条件。</p>
+<h3 id="组合分析"><a href="#组合分析" class="headerlink" title="组合分析"></a>组合分析</h3><h4 id="组合测试的途径"><a href="#组合测试的途径" class="headerlink" title="组合测试的途径"></a>组合测试的途径</h4><p>目前，通常有两种测试参数相互作用的途径。第一种途径一般涉及随机或者特定的方法，第二种途径包括了更加系统的过程，随机评估的方法包括最优猜测或特定测试和随机选择，而系统性评估方法包括测试每个变量或分支（EC），基准测试（BC），正交陈列（OA），组合测试和穷举测试（AC）。</p>
+<h4 id="组合分析实践"><a href="#组合分析实践" class="headerlink" title="组合分析实践"></a>组合分析实践</h4><ul>
+<li>新建BC测试的输入矩阵</li>
+<li>新建关于通用或可能的场景和历史性故障指标的输入矩阵</li>
+<li>为每个参数新建可变参数的输入模型文件</li>
+<li>定制模型文件来排除互斥的可变状态或固定的参数</li>
+<li>将输入文件应用到PICT工具</li>
+<li>复审工具的输出信息</li>
+<li>如果有必要，提炼和定制模型文件</li>
+<li>将输入文件重新导入PICT工具</li>
+<li>重新验证输出信息</li>
+<li>执行测试</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/27/软件过程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -895,7 +1193,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -917,7 +1215,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
